@@ -1,12 +1,20 @@
 "use strict"
 
 
-const answer = [];
+const numberOfFilms = +prompt('Сколько фильмов вы уже посмотрели?', ' ');
+const lastMovie = prompt('Один из последних просмотренных фильмов?', ' '),
+      review = prompt('Она сколько оцените его?', ' '),
+      lastMovie2 = prompt('Один из последних просмотренных фильмов?', ' '),
+      review2 = prompt('Она сколько оцените его?', ' ');
 
-answer[0] = prompt('Как ваше имя?', '');
-answer[1] = prompt('Как ваше фамилия?', '');
-answer[2] = prompt('Сколько вам лет?', '');
+const personalMovieDB = {
+    count: numberOfFilms,
+    movies: {},
+    actors: {},
+    genres: [],
+    privat: false
+};
 
-console.log(answer)
-
-
+personalMovieDB.movies[lastMovie] = review;
+personalMovieDB.movies[lastMovie2] = review2;
+console.log(personalMovieDB)
