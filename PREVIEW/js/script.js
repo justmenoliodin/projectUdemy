@@ -1,20 +1,30 @@
 "use strict"
 
+const num = 90;
 
-const numberOfFilms = +prompt('Сколько фильмов вы уже посмотрели?', ' ');
-const lastMovie = prompt('Один из последних просмотренных фильмов?', ' '),
-      review = prompt('Она сколько оцените его?', ' '),
-      lastMovie2 = prompt('Один из последних просмотренных фильмов?', ' '),
-      review2 = prompt('Она сколько оцените его?', ' ');
+if (num < 49) {
+    console.log('Меньше чем 50')
+} else if (num > 49) {
+    console.log('Больше чем 50')
+} else {
+    console.log('Равен 50')
+}
 
-const personalMovieDB = {
-    count: numberOfFilms,
-    movies: {},
-    actors: {},
-    genres: [],
-    privat: false
-};
+(num < 49) ? console.log('меньше чем 50') : console.log('Error');
 
-personalMovieDB.movies[lastMovie] = review;
-personalMovieDB.movies[lastMovie2] = review2;
-console.log(personalMovieDB)
+
+const name = 'Zhansaya'
+switch (name) {
+    case 'Nastya': 
+        console.log('Orys, ahahahhaha');
+        break;
+    case 'John': 
+        console.log('Negr. ahahahahahahhaha');
+        break;
+    case 'Zhansaya':
+        console.log('Soska, ahahahhahahahahahaha');
+        break;
+    default: 
+        console.log('Adam emes! HAHAHAHA')
+        break;
+}

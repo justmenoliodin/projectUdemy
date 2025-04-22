@@ -1,0 +1,15 @@
+alert. confirm. prompt
+
+13. Интерполяция
+Косые ковычки или бэктики: 
+const user = 'Ivan';
+alert(`Hello, ${user}`)
+
+14. Операторы JS
+конкатенация - это когда при прибавлении к строке числу получаем строку 
+унарный плюс - это плюс который стоит перед элементом 
+инкремент и декремент - постфиксный: incr++, decr--; префиксный: ++incr, ++dect.
+&& - and; || - or; 
+Приоритет операторов - https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Operators/Operator_precedence#Table
+19. Условия 
+Тернарные операторы - (num < 49) ? console.log('меньше чем 50') : console.log('Error');
